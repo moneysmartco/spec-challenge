@@ -13,6 +13,8 @@ feature 'user creates Post' do
       click_button('Save')
     end
 
+    # User is redirected to newly created Post show page.
     # Add assertions here
+    
   end
 end

@@ -4,7 +4,21 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @sort_order = params[:sort_order] == 'asc' ? 'desc' : 'asc'
+
+    @posts = case params[:sort_by]
+    when 'title'
+      Post.order(title: params[:sort_order])
+    when 'description'
+      sort_order = if params[:sort_order] == 'asc'
+                     'desc'
+                   else
+                     'asc'
+                   end
+      Post.order(description: sort_order)
+    else
+      Post.all
+    end
   end
 
   # GET /posts/1

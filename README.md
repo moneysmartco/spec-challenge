@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
 
-* System dependencies
+```
+git clone git@github.com:colynprater/spec-challenge.git
 
-* Configuration
+bundle install
+rake db:migrate
+```
 
-* Database creation
+## Start local server
 
-* Database initialization
 
-* How to run the test suite
+```
+bin/rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Run test suite
 
-* ...
+
+```
+rspec
+```

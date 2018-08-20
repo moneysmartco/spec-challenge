@@ -18,6 +18,7 @@ feature 'user creates Post' do
 
     expect(page).to have_content('Post was successfully destroyed.')
     expect(current_path).to eq posts_path
+
     # Add more assertions here
 
   end

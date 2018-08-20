@@ -25,3 +25,5 @@ bin/rails s
 ```
 rspec
 ```
+
+Check out the app [here](https://spec-challenge.herokuapp.com/)

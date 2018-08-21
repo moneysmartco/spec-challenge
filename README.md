@@ -11,8 +11,9 @@ the issues we have on the site.
 
 ## Local Setup
 ```
-git clone git@github.com:colynprater/spec-challenge.git
+git clone git@github.com:moneysmartco/spec-challenge.git
 
+cd spec-challenge
 bundle install
 rake db:migrate
 ```

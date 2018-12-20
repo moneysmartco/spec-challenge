@@ -5,9 +5,17 @@ It is your task to find as many as you can and in your preferred language either
 automate the testing of the small application or get into the code here itself and fix or identify
 the problems.  
 
-If you are familiar with ruby you can clone this repo and identify any issues in here.  
-Otherwise you may visit the application [here](https://spec-challenge.herokuapp.com/) and identify
-the issues we have on the site.  
+## Hidden bugs
+The following bugs are for the aspiring MoneySmart applicants to spot, identify and describe.
+
+### Index page
+- `sort by description` link is broken, it sorts posts by description in reverse alphabetical order
+- `sort by body` link does nothing
+- `delete post` link doesn't actually delete a post, though a flash message will render saying that a post has been deleted
+
+### Show page
+- The `description` on the show page is hard coded. No matter the value in the db, it always renders 'this is a post'.
+
 
 ## Local Setup
 ```
